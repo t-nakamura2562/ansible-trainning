@@ -1,0 +1,8 @@
+[trainning1]
+35.76.54.43
+
+[all:vars]
+ansible_port=22
+ansible_ssh_user='ec2-user'
+ansible_ssh_private_key_file='~/codecamp-common.pem' # 各自のパスを指定してください
+ansible_role_dir='../roles'

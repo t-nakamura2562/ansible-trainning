@@ -1,0 +1,6 @@
+private.yml
+inventory/*.yml
+roles/init/templates/authorized_keys
+roles/ruby/templates/database.yml
+roles/ruby/templates/master.key
+roles/ruby/templates/secrets.yml

@@ -1,0 +1,24 @@
+- name: install latest apache temporary
+  yum:
+    name:
+      - httpd
+  become: true
+
+- name: start httpd
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+  become: true
+
+- name: apache本体の設定ファイルを変更（index.html）
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    owner: apache
+    group: apache
+    mode: 0755
+    force: yes
+  become: true
+  notify:
+    - restart httpd

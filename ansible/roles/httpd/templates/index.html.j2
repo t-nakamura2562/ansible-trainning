@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Down for Maintenance</title>
+
+    <style type="text/css">
+      #layout {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #layout h1 {
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 0px;
+        font-weight: bold;
+        color: #126598;
+      }
+
+      #layout h2 {
+        text-align: center;
+        margin-top: 0px;
+        color: #126598;;
+      }
+
+      #layout #contents {
+        margin-top: 30px;
+        margin-bottom: 8%;
+        line-height: 1.5;
+      }
+
+      #layout #contents p {
+        text-align: center;
+        color: #126598;
+        margin-bottom: 0px;
+      }
+
+      #layout #contents #reason {
+        text-align: center;
+        color: #126598;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+
+      #layout #contents .link {
+        text-align: center;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div id="layout">
+      <h1>メンテナンス中</h1>
+      <h2>Maintenance</h2>
+      <div id="contents">
+        <p>申し訳ございません。ただいまのお時間、メンテナンス中です。<br/>
+        メンテナンス中は、全てのサービスを利用できませんのでご注意ください。</p>
+        <div id="reason">
+          {{ __date }}
+        </div>
+        <p>codecamp事務局へのお問い合わせはこちら</p>
+        <div class="link">
+          <a href="mailto:support@codecamp.jp">support@codecamp.jp</a>
+        </div>
+    </div>
+  </body>
+</html>
