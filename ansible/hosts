@@ -1,5 +1,5 @@
 [trainning1]
-35.76.54.43
+35.76.54.43 # 各自のIPを指定してください
 
 [all:vars]
 ansible_port=22
