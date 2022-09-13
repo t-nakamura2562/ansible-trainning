@@ -1,5 +1,1 @@
-- hosts: trainning1
-  vars_files:
-     - inventory/site.yml
-  roles:
-    - httpd
+
